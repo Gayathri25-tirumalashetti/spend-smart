@@ -95,5 +95,9 @@ const startServer = async () => {
     process.exit(1);
   }
 };
+ app.use(cors({
+    origin:  "https://spend-smart-10-frontend.onrender.com",
+    credentials: true
+}));
 
 startServer();
